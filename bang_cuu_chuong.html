@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bảng cửu chương</title>
+    <script></script>
+</head>
+<body>
+<style>
+    table,td,tr{
+        border: 1px solid black;
+    }
+</style>
+<script>
+ let html = '';
+html += "<table>";
+    for (let i = 1; i <= 9; i++){
+    html += "<tr>";
+        for (let j = 1; j <= 9; j++) {
+        html += "<td>";
+            html += j + "x" + i + "=" +j*i;
+            html += "</td>";
+        }html += "</tr>"
+    } html += "</table>";
+document.write(html);
+</script>
+</body>
+</html>
